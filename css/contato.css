@@ -1,0 +1,662 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    border: 0;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+     outline: none;
+     
+}
+nav, ul {
+    list-style: none;
+}
+p {
+    z-index: 200;
+}
+
+
+
+
+body {
+    background-color: #141414;
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    animation: colors 10s ease-in-out infinite;
+    color: black;
+    width: 300%;
+    height: 100%;
+    margin: auto;
+    min-width:60vh;
+    max-width:1300px;
+    min-height: 60vh;
+    overflow-x: hidden;
+}
+
+/* Menu do Cabeçalho */
+
+div.logo img {
+    max-width: 150px;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}
+.navbar {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.oque {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 120px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    
+}
+
+
+.oque h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.oque h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+
+.oque:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.contato {
+    width: 400px;
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 120px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-left: 30px;
+    height: 200px;
+
+    
+}
+
+
+
+
+.contatoi i {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 80px;
+    color: rgba(182, 182, 182, 0.507);
+    transition: 0.3s all ease-out;
+    
+    transform: rotate(0deg);
+    
+    
+}
+
+.contatoi {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s all ease-out;
+    width: 190px;
+    height: 150px;
+    margin-top: -103px;
+    margin-left: 189px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 160px;
+    z-index: 100;
+}
+
+
+.contato:hover .contatoi i {
+    animation: plane 1s normal ease;
+}
+
+@keyframes plane {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    30%{
+        
+
+        transform: rotate(15deg);
+    }
+
+    70%{
+        transform: rotate(-15deg);
+    }
+
+    
+    100%{
+        transform: rotate(-0deg);
+    }
+}
+
+
+
+
+.contato h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.contato h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+.contato h3 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.contato a {
+    color: rgb(138, 53, 218);
+    transition: 0.3s all ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contato a:hover {
+    color: rgb(158, 87, 224);
+    text-decoration: underline;
+    
+}
+
+
+
+.contato:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.contato:hover .contatoi {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.contato:hover .contatoi i {
+    color: rgba(235, 235, 235, 0.541);
+}
+
+
+.donate {
+    width: 400px;
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 120px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-left: 460px;
+    height: 200px;
+
+    
+}
+
+
+
+
+.donatei i {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 80px;
+    color: rgba(182, 182, 182, 0.507);
+    transition: 0.3s all ease-out;
+    
+    transform: rotate(0deg);
+    
+    
+}
+
+.donatei {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s all ease-out;
+    width: 190px;
+    height: 150px;
+    margin-top: -139px;
+    margin-left: 189px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 160px;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+.donate h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.donate h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+.donate h3 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+
+
+
+.donate:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.donate:hover .donatei {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.donate:hover .donatei i {
+    color: rgba(235, 235, 235, 0.541);
+}
+
+
+.botoes-doar a {
+    color: white;
+    font-size: 25px;
+    margin-right: 15px;
+    transition: 0.3s all ease;
+}
+
+.paypal:hover {
+    color: rgb(0, 140, 255);
+}
+
+.mpay:hover {
+    color: rgb(47, 179, 255);
+}
+
+.gpay:hover {
+    color: rgb(8, 240, 8);
+}
+
+.btc:hover {
+    color: yellow;
+}
+
+
+
+.redes {
+    width: 400px;
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 350px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-left: -400px;
+    height: 200px;
+
+    
+}
+
+
+
+
+.redei i {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 80px;
+    color: rgba(182, 182, 182, 0.507);
+    transition: 0.3s all ease-out;
+    
+    transform: rotate(0deg);
+    
+    
+}
+
+.redei {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s all ease-out;
+    width: 190px;
+    height: 150px;
+    margin-top: -116px;
+    margin-left: 189px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 160px;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+.redes h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.redes h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+.redes h3 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+
+
+
+.redes:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.redes:hover .redei {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.rede:hover .redei i {
+    color: rgba(235, 235, 235, 0.541);
+}
+
+
+.botoes-seguir a {
+    color: white;
+    font-size: 25px;
+    margin-right: 15px;
+    transition: 0.3s all ease;
+}
+
+.twitter:hover {
+    color: cyan;
+}
+
+.instagram:hover {
+    color: rgb(168, 58, 168);
+}
+
+.discord:hover {
+    color: rgb(131, 145, 190);
+}
+
+.youtube:hover {
+    color: red;
+}
+
+
+
+
+.att {
+    width: 400px;
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 350px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-left: 30px;
+    height: 200px;
+
+    
+}
+
+
+
+
+.atti i {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 80px;
+    color: rgba(182, 182, 182, 0.507);
+    transition: 0.3s all ease-out;
+    
+    transform: rotate(0deg);
+    
+    
+}
+
+.atti {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s all ease-out;
+    width: 190px;
+    height: 150px;
+    margin-top: -79px;
+    margin-left: 189px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 160px;
+    z-index: 100;
+}
+
+
+.att:hover .atti i {
+    animation: att 1s normal ease;
+}
+
+@keyframes att {
+    0%{
+        margin-bottom: 0px;
+    }
+
+    30%{
+        
+
+        margin-bottom: 2px;
+    }
+
+    70%{
+        margin-bottom: -2px;
+    }
+
+    
+    100%{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+.att h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.att h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+.att h3 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.att a {
+    color: rgb(138, 53, 218);
+    transition: 0.3s all ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.att a:hover {
+    color: rgb(158, 87, 224);
+    text-decoration: underline;
+    
+}
+
+
+
+.att:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.att:hover .atti {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.att:hover .atti i {
+    color: rgba(235, 235, 235, 0.541);
+}
+
+
+.ads {
+    width: 400px;
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 5px 20px;
+    margin-top: 350px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-left: 460px;
+    height: 200px;
+
+    
+}
+
+
+
+
+.adsi i {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 80px;
+    color: rgba(182, 182, 182, 0.507);
+    transition: 0.3s all ease-out;
+    
+    transform: rotate(0deg);
+    
+    
+}
+
+.adsi {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s all ease-out;
+    width: 190px;
+    height: 150px;
+    margin-top: -79px;
+    margin-left: 189px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 160px;
+    z-index: 100;
+}
+
+
+
+
+
+
+.ads h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.ads h2 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+
+
+.ads:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.ads:hover .adsi {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.ads:hover .adsi i {
+    color: rgba(235, 235, 235, 0.541);
+}
